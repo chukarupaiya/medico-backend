@@ -1,0 +1,49 @@
+@API_URL = http://localhost:3001/medication
+
+
+###checked
+POST  {{API_URL}}/add
+Content-Type: application/json
+
+   
+{        
+    "patient_id":"1",
+    "medicine":"medicine-1",
+    "dosage":"12" ,
+    "time":"10:00 pm" 
+   
+}
+
+### checked
+POST  {{API_URL}}/fetchall
+Content-Type: application/json
+
+{        
+    
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{        
+    "id":1,
+    "patient_id":"0",
+    "medicine":"medicine-0",
+    "dosage":"0" ,
+    "time":"00:00" 
+   
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{        
+    "id":1,
+    "patient_id":"1",
+    "medicine":"medicine-1",
+    "dosage":"12" ,
+    "time":"10:00 pm" 
+   
+}

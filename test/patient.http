@@ -1,0 +1,55 @@
+@API_URL = http://localhost:3001/patient
+
+### checked 
+POST  {{API_URL}}/add
+Content-Type: application/json
+
+{        
+    "email":"patient1@gmail.com",
+    "password":"patient-1", 
+    "name":"patient-1",
+    "age":"20",  
+    "gender":"male",
+    "dob":"28-09-23",
+    "disease":"disease-1"
+
+}
+
+
+### checked
+POST  {{API_URL}}/fetchall
+Content-Type: application/json
+
+{        
+    
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "email":"patient0@gmail.com",
+    "password":"patient-0", 
+    "name":"patient-0",
+    "age":"0",  
+    "gender":"female",
+    "dob":"0-0-0",
+    "disease":"disease-0"
+}
+
+### checked
+POST  {{API_URL}}/update
+Content-Type: application/json
+
+{       
+    "id":1, 
+    "email":"patient1@gmail.com",
+    "password":"patient-1", 
+    "name":"patient-1",
+    "age":"20",  
+    "gender":"male",
+    "dob":"28-09-23",
+    "disease":"disease-1"
+}
